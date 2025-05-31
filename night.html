@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雨夜回心曲</title>
+    <style>
+        /* 通用样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'SimSun', '楷体', serif;
+            background-color: #1a1a35; /* 深蓝色背景 */
+            color: #e0e0e0; /* 浅灰色文字 */
+            text-align: center;
+        }
+
+        /* 主要内容区域 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffcc00; /* 金色标题 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            background-color: #222;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .video-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://via.placeholder.com/150') no-repeat center center / contain;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: #222;
+        }
+
+        /* 页脚 */
+        .footer {
+            background-color: #222;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 主要内容区域 -->
+    <div class="container">
+        <h1 class="title">雨夜回心曲</h1>
+        <div class="video-container">
+            <video controls>
+                <source src="雨夜.mov" type="video/mp4">
+                您的浏览器不支持 video 标签。
+            </video>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>&copy; 2025 雨夜回心曲</p>
+    </div>
+</body>
+
+</html>
